@@ -1,0 +1,2 @@
+#docker build -t bonus_0 .
+#docker run -it bonus_0

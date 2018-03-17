@@ -1,0 +1,7 @@
+#!/bin/sh
+#docker run -it --rm debian
+apt update
+apt install build-essential -y
+apt install git-core -y
+apt install emacs -y
+#exit

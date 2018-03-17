@@ -1,0 +1,4 @@
+#docker build -t ex02 .
+#docker run -it --rm ex02
+#docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp ex02 ruby script.rb
+#puts "Hello, world!!"

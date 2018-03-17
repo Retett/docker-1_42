@@ -1,0 +1,5 @@
+docker pull mysql:latest
+docker pull phpmyadmin/phpmyadmin:latest
+
+docker run -d --name my_sqlt -e MYSQL_ROOT_PASSWORD=admin -e MYSQL_ROOT_NAME=SQLT mysql:latest
+docker run -d --name myadmin --link my_sqlt:db -p 8080:80 phpmyadmin/phpmyadmin:latest

@@ -1,0 +1,9 @@
+#!/bin/sh
+docker-machine ssh Aiur
+docker swarm join --token SWMTKN-1-2riyon64v9jljp3f4j5ehylymowgoih8877pyaou66ku7hp19v-chpjplz4r6byi8feg5uwu9wdk 192.168.99.100:2377
+
+# To add a worker to this swarm, run the following command:
+
+#     docker swarm join --token SWMTKN-1-5rvbcczadacbe1f31zzb91ibeslxqumird0w1amli60ibfj0xy-ejgk20q0ipamto3t035uu34x7 192.168.99.100:2377
+
+# To add a manager to this swarm, run 'docker swarm join-token manager' and follow the instructions.
